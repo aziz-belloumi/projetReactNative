@@ -1,16 +1,28 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # dependencies
-node_modules/
+**/node_modules/
 
-# Expo
-.expo/
-dist/
-web-build/
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# React Native
+frontend/android/.gradle/
+frontend/android/app/build/
+frontend/android/build/
+frontend/android/local.properties
+frontend/android/.cxx/
+frontend/android/app/.cxx/
 
 # Native
 *.orig.*
 *.jks
+*.keystore
 *.p8
 *.p12
 *.key
@@ -33,3 +45,6 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Test and coverage output
+coverage/

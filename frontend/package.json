@@ -1,0 +1,38 @@
+{
+  "name": "wellnest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "android:build": "cd android && gradlew.bat assembleDebug",
+    "backend:start": "npm --prefix backend start",
+    "backend:dev": "npm --prefix backend run dev",
+    "backend:test": "npm --prefix backend test"
+  },
+  "dependencies": {
+    "@react-navigation/bottom-tabs": "7.20.0",
+    "@react-navigation/native": "7.5.0",
+    "@react-navigation/stack": "7.12.0",
+    "react": "19.2.3",
+    "react-native": "0.87.1",
+    "react-native-gesture-handler": "^2.33.0",
+    "react-native-keychain": "^10.0.0",
+    "react-native-modal": "^13.0.1",
+    "react-native-safe-area-context": "^5.5.2",
+    "react-native-screens": "^4.29.0",
+    "react-native-vector-icons": "^10.2.0",
+    "react-native-video": "^6.19.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@react-native-community/cli": "20.2.0",
+    "@react-native-community/cli-platform-android": "20.2.0",
+    "@react-native/babel-preset": "0.87.1",
+    "@react-native/metro-config": "0.87.1"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
